@@ -6,16 +6,30 @@
   "dependencies": {
     "https": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
+    "i18next": "^15.0.4",
+    "pg": "^8.0.2",
+    "pg-promise": "^10.5.1",
     "rc": "^1.2.8",
     "telegraf": "^3.37.0"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.13.0",
     "@types/rc": "^1.1.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.3",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "start": "node ./dist/app.test.js",
+    "dev": "gulp dev"
   },
   "author": "",
   "license": "ISC"
